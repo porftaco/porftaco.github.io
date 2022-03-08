@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Notify Hellas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="" name="keywords">
+  <meta content="The only group you will ever need." name="description">
+  <meta name="theme-color" content="#f8b133">
+  <link href="assets/logosm.png" rel="icon">
+  <link rel="stylesheet" href="assets/styles/normalize.css" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <script src="util.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <img src="assets/logosm.png">
+      <span class="progress"></span>
+    </div>
+  </div>
+  <!-- Preloader -->
+
+  <div class="landing-page" id="home">
+    <div class="navbar">
+      <a href="#" class="option home-option">Home</a>
+      <a href="#features" class="option">Features</a>
+      <a href="#faq" class="option">FAQ</a>
+      <a href="https://notify-hellas.metalabs.group/dashboard" class="option mango-option"
+        style="color: rgb(52, 128, 199);">Dashboard</a>
+    </div>
+    <div class="main-landing">
+      <div class="main-landing-center" data-aos="zoom-out" data-aos-duration="2000">
+        <img src="./assets/logolg.png" alt="Notify Hellas" class="main-logo" />
+        <span class="landing-title">Notify Hellas</span>
+        <span class="landing-subtitle">The only cook group you will ever need.</span>
+        <a class="landing-button-add option-dashboard" id="purchase-btn"
+        href="https://notify-hellas.metalabs.group/dashboard">Dashboard</a>
+        <!--HERE!!!!-->
+        <a class="landing-button-add" id="purchase-btn"
+          href="">Sold out</a>
+        <!--HERE!!!!-->
+        <span class="landing-subtitle-under">€35/Month.</span>
+      </div>
+
+    </div>
+  </div>
+  <!--end of landing-->
+
+
+  <div class="features-page" id="features">
+    <div class="yellow-line" data-aos="fade-left" t></div>
+
+    <span class="features-title" data-aos="fade-up">Features</span>
+
+
+    <div class="features-grid" data-aos="zoom-out" data-aos-duration="1000">
+      <div class="features-card card1">
+        <div class="yellow-line-card"></div>
+        <!-- <img src="./assets/performance-icon.svg" alt="Performance" class="features-card-icon features-card-icon1" /> -->
+
+        <span class="card-title">Monitors</span>
+        <span class="card-description">Setting up with a few clicks, loading cloud saved settings easily.
+          Never miss a restock or shock drop again. Notify Hellas offers a collection of top-quality monitors for the
+          most
+          coveted web sites. We are constantly expanding the sites we monitor. #1 Greek monitors are available for all members and their success speaks by itself!
+        </span>
+      </div>
+
+      <div class="features-card card2">
+        <div class="yellow-line-card"></div>
+        <!-- <img src="./assets/speed-icon.svg" alt="speed" class="features-card-icon features-card-icon2" /> -->
+
+        <span class="card-title">Support</span>
+        <span class="card-description">Get the help you need, whenever you need. Whether you are just starting out or
+          are an experienced reseller. Notify Hellas staff will make sure you are prepared for any drop with 24/7 assistance
+          tailored to you via our tickect support system. Members also have access to release guides, sitelists, resell
+          predictions and video tutorials.
+        </span>
+      </div>
+
+      <div class="features-card card3">
+        <div class="yellow-line-card"></div>
+        <!-- <img src="./assets/scalability-icon.svg" alt="scalability" class="features-card-icon features-card-icon3" /> -->
+
+        <span class="card-title">Exclusive Information</span>
+        <span class="card-description">Be prepared for every release. Notify's Hellas exclusive information and early
+          links are unparalleled. We are known for our insider knowledge on Nike SNKRS, Footsites and in-store drops in
+          major cities.
+        </span>
+      </div>
+
+      <div class="features-card card4">
+        <div class="yellow-line-card"></div>
+        <!-- <img src="./assets/dashboard-icon.svg" alt="dashboard" class="features-card-icon features-card-icon4" /> -->
+
+        <span class="card-title">Groupbuys</span>
+        <span class="card-description">Notify Hellas relationships with the most prestigious sneaker-related businesses
+          gives members the chance to access some of the most limited and desirable tools to assist your reselling,
+          through frequent bot and proxy groupbuys.
+        </span>
+      </div>
+      <div class="features-card card5">
+        <div class="yellow-line-card"></div>
+        <!-- <img src="./assets/guidance-icon.svg" alt="guidance" class="features-card-icon features-card-icon5" /> -->
+
+        <span class="card-title">Dashboard</span>
+        <span class="card-description">With our friendly dashboard you can do whatever you want with your membership you
+          can edit it unbind it and cancel it anytime.
+        </span>
+      </div>
+
+      <div class="features-card card6">
+        <div class="yellow-line-card"></div>
+        <!-- <img src="./assets/community-icon.svg" alt="community" class="features-card-icon features-card-icon6" /> -->
+
+        <span class="card-title">Community</span>
+        <span class="card-description">Within our Discord server first class 24/7 support is provided and
+          a friendly community will welcome new members.
+        </span>
+      </div>
+    </div>
+  </div>
+  <!--end of features-->
+
+  <div class="faq-page" id="faq">
+    <div class="yellow-line" data-aos="fade-left" data-aos-duration="1000"></div>
+    <span class="faq-title" data-aos="fade-right" data-aos-duration="1000">Frequently Asked Questions</span>
+
+    <div class="faq-card" style="z-index: 1;" data-aos="fade-up" data-aos-duration="1000" data-aos-offet="600">
+      <span class="faq-question">How much does Notify Hellas membership cost?</span>
+      <div class="faq-answer-wrapper">
+        <span class="faq-answer">The price is a recurring payment of 35€ per month.</span>
+      </div>
+    </div>
+
+    <div class="faq-card" style="z-index: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-offet="600">
+      <span class="faq-question">What Notify Hellas is?</span>
+      <div class="faq-answer-wrapper">
+        <span class="faq-answer">Notify Hellas is a group dedicated to helping its members make money by copping and
+          reselling hyped streetwear, sneakers and much more. Through our professional team of staff, we offer
+          information and services to help get you caught up on all the upcoming releases and aid you in getting that
+          limited release, such as slots, site-list, guides and personal 1-on-1 help. Never miss out on a hyped drop
+          again and join the winning team!</span>
+      </div>
+    </div>
+
+    <div class="faq-card" style="z-index: 3;" data-aos="fade-up" data-aos-duration="1100" data-aos-offet="600">
+      <span class="faq-question">Why should i join?</span>
+      <div class="faq-answer-wrapper">
+        <span class="faq-answer">With our lightning-fast monitors, you won't miss a single drop. Also, we provide early
+          info that is updated consistently to ensure the most accuracy along with early links, giveaways, exclusive
+          group buys, bot rentals, support, release guides and more. We are more than a cook group, we are a family!
+          <a href="https://twitter.com/NotifyHellas" class="faq-link"></a> Follow the twitter/instagram accounts to receive the
+          latest information.</span>
+      </div>
+    </div>
+
+    <br><br>
+  </div>
+  <!--end of faq-->
+
+  <div class="footer">
+    <div class="footer-left">
+      <span class="footer-name">Notify Hellas</span>
+    </div>
+
+    <div class="footer-center">
+      <span class="footer-center">Copyright 2021 Notify Hellas. All Rights Reserved</span>
+
+    </div>
+    <div class="footer-right">
+      <a href="https://www.instagram.com/notify_hellas/" style="text-decoration: none;">
+        <img src="./assets/footer-instagram-logo.svg" alt="Logo instagram" class="footer-ico" />
+      </a>
+
+      <a href="https://twitter.com/NotifyHellas" style="text-decoration: none;">
+        <img src="./assets/footer-twitter-logo.svg" alt="Logo twitter" class="footer-ico" />
+      </a>
+
+    </div>
+    <br>
+  </div>
+  <!--end of footer-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- Payment API -->
+
+  <script>
+    var acc = document.getElementsByClassName("faq-question");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        panel.classList.toggle("active");
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = "250px";
+        }
+      });
+    }
+
+
+
+
+
+    $("#individual-option").click(() => {
+      $("#individual-option").addClass("selected");
+      $("#business-option").removeClass("selected");
+      $(".secondary-options-row").slideUp();
+      $(".business-name").slideUp();
+      $(".business-vat").slideUp();
+      checkBusiness()
+      validateForm()
+    });
+
+    $("#business-option").click(() => {
+      $("#individual-option").removeClass("selected");
+      $("#business-option").addClass("selected");
+      $(".secondary-options-row").slideDown();
+      $(".business-name").slideDown();
+      $("#checkout").css('background', '#ffffff');
+      $("#checkout").css('color', 'black');
+      $("#checkout").attr("disabled", true);
+      checkBusiness()
+    });
+
+    $("#business-usage").click(() => {
+      $("#business-usage").addClass("selected");
+      $("#private-usage").removeClass("selected");
+      $(".business-vat").slideDown();
+      checkBusiness()
+    });
+
+    $("#private-usage").click(() => {
+      $("#business-usage").removeClass("selected");
+      $("#private-usage").addClass("selected");
+      $(".business-vat").slideUp();
+      checkBusiness()
+    });
+
+    $('.business-name').on('input', function () {
+      checkBusiness()
+      validateForm()
+    });
+
+    $('.business-vat').on('input', function () {
+      checkBusiness()
+      validateForm()
+    });
+
+    function checkBusiness() {
+      let business = $(".business-name").val()
+      let selected = $('span.selected').text()
+
+      if (selected == "BusinessBusiness Usage") {
+        if (!checkVAT()) {
+          return;
+        }
+      } else if (selected == "Individual") {
+        enable()
+
+        return;
+      }
+
+      if (business.length > 0) {
+        enable()
+      } else {
+        disable()
+      }
+
+      function checkVAT() {
+        let vat = $(".business-vat").val();
+
+        if (vat.length > 0) {
+          enable()
+
+          return true;
+        } else {
+          disable()
+
+          return false;
+        }
+      }
+
+      function enable() {
+        if (validateForm()) {
+          $("#checkout").attr("disabled", false);
+          $("#checkout").css('background', '#f8b133');
+          $("#checkout").css('color', 'white');
+        }
+      }
+
+      function disable() {
+        $("#checkout").css('background', '#ffffff');
+        $("#checkout").css('color', 'black');
+        $("#checkout").attr("disabled", true);
+      }
+    }
+  </script>
+  <script>
+    window.addEventListener("load", function (event) {
+      $('.preloader').fadeOut('slow');
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 800,
+      disable: "mobile"
+    });
+  </script>
+
+</body>
+
+</html>

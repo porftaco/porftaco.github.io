@@ -50,7 +50,7 @@ a {
   font-weight: 500;
   font-size: 12px;
   text-align: center;
-  color: #ffffff; }
+  color: black; }
 
 .mango-option {
   font-weight: bold;
@@ -66,7 +66,7 @@ a {
   border-bottom: 3px white solid; }
 
 .option:hover {
-  color: white; }
+  color: grey; }
 
 .main-landing {
   width: 75%;
@@ -93,14 +93,14 @@ a {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
-  color: #ffffff;
+  color: black;
   margin-bottom: 10px; }
 
 .landing-subtitle {
   font-weight: 500;
   font-size: 12px;
   text-align: center;
-  color: #ffffff;
+  color: black;
   margin-bottom: 10px; }
 
 .landing-subtitle-under {
@@ -116,7 +116,7 @@ a {
 
 .landing-button-add {
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid black;
   box-sizing: border-box;
   border-radius: 7px;
   font-weight: 500;
@@ -127,7 +127,7 @@ a {
   text-align: center;
   margin-top: 20px;
   text-decoration: none;
-  color: #ffffff;
+  color: black;
   cursor: pointer;
   transition: 0.3s all ease-out 0s; }
   .landing-button-add:active {
@@ -404,9 +404,9 @@ a {
   
 
 .faq-card:hover {
-  background:  rgb(52, 128, 199); }
+  background:  #ffffff; }
   .faq-card:hover .faq-question {
-    color: #ffffff; }
+    color: black }
   .faq-card:hover .faq-question::after {
     border-color: white; }
 
@@ -439,7 +439,7 @@ a {
 
 .faq-answer-wrapper {
   max-height: 0;
-  background:  rgb(52, 128, 199);
+  background:  #ffffff;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   transition: max-height 0.2s ease-out;
@@ -453,7 +453,7 @@ a {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  color: white;
+  color: black;
   font-size: 16px; }
 
 .faq-answer-b {
@@ -469,8 +469,8 @@ a {
   opacity: 1; }
 
 .faq-question.active {
-  color: #ffffff;
-  background: rgb(52, 128, 199);
+  color: black;
+  background: #ffffff;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   transition: max-height 0.3s ease-out; }
@@ -946,7 +946,7 @@ a {
             width: 100px;
             height: 1px;
             left: -102px;
-            background-image: linear-gradient(-46deg, rgb(52, 128, 199) 0%, rgb(52, 128, 199) 100%);
+            background-image: linear-gradient(-46deg, #ffffff 0%, #ffffff 100%);
             animation-fill-mode: forwards;
             -webkit-animation: loader-anim 1s 0s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
             -moz-animation: loader-anim 1s 0s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);

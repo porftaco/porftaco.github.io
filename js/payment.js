@@ -45,7 +45,7 @@ countryList.forEach(function (e) {
 
 function refreshStock() {
     let pw = getUrlVars().pw;
-    let url = "https://payment.mangopreme.com/inStock?id=" + (pw != undefined && pw != null ? pw : 1)
+    let url = "https://payment.gammapreme.com/inStock?id=" + (pw != undefined && pw != null ? pw : 1)
     fetch(url).then(async (res) => {
         let data = await res.json();
         if (data.inStock) {
@@ -180,7 +180,7 @@ function buy() {
     let paymentData = { "product_id": id, "email": email.val(), "answer": answer.val(), customer_type: customer_type, vat: isVatRequired ? ($(".business-vat").val()) : null, companyName: $(".business-name").val() != "" ? $(".business-name").val() : null }
     //paymentData.payload = preparePayload(paymentData);
     document.getElementById("outcome").style.display = "none";
-    fetch("https://payment.mangopreme.com/buy", {
+    fetch("https://payment.gammapreme.com/buy", {
         method: "POST",
         mode: "cors",
         cache: "no-cache",
@@ -220,7 +220,7 @@ function buy() {
                     // The payment has been processed!
                     if (result.paymentIntent.status === 'succeeded') {
                         console.log("success");
-                        $("#checkout").prop('value', 'Welcome to MangoPreme')
+                        $("#checkout").prop('value', 'Welcome to gammaPreme')
                         $("#checkout").css('color', 'white');
                         $("#checkout").css('background-color', '#02b002');
                         document.getElementById("outcome").style.display = "inline";
